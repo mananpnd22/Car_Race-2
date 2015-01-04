@@ -14,40 +14,54 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        //self.backgroundColor = [SKColor whiteColor];
+        self.startLable = [NNStartLabel generateStartLabel];
+        self.startLable.position = CGPointMake(self.frame.size.width / 2, (self.frame.size.height / 2 )+ 35);
+        self.settingLable = [NNSettingLabel generateSettingLabel];
+        self.settingLable.position = CGPointMake(self.frame.size.width / 2, (self.frame.size.height / 2 ) - 35);
+        [self addChild:self.startLable];
+        [self addChild:self.settingLable];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        
-        [self addChild:myLabel];
     }
     return self;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
-    
     for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
+        CGPoint touchLocation = [touch locationInNode:self];
+        SKNode *node = [self nodeAtPoint:touchLocation];
         
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
+        if ([node.name isEqualToString:startName]) {
+            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+            NSUserDefaults *prefs1 = [NSUserDefaults standardUserDefaults];
+            NSUserDefaults *p = [NSUserDefaults standardUserDefaults];
+            [prefs setFloat:120.0 forKey:@"screenMovingSpeed"];
+            [prefs1 setFloat:60.0 forKey:@"objectMoivingSpeed"];
+            [p setInteger:1 forKey:@"level"];
+            [self changeToGameScene];
+            
+        }
+        if ([node.name isEqualToString:settingName]) {
+            [self changeToSettingScene];
+        }
     }
 }
 
--(void)update:(CFTimeInterval)currentTime {
-    /* Called before each frame is rendered */
+-(void) changeToGameScene
+{
+        NNGame *game = [NNGame sceneWithSize:self.size];
+        SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionDown duration:1.0];
+        [self.scene.view presentScene:game transition:reveal];
+        
 }
+-(void) changeToSettingScene
+{
+    NNSetting *setting = [NNSetting sceneWithSize:self.size];
+    SKTransition *reveal = [SKTransition revealWithDirection:SKTransitionDirectionDown duration:1.0];
+    [self.scene.view presentScene:setting transition:reveal];
+    
+}
+
 
 @end

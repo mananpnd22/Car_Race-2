@@ -17,13 +17,23 @@
 		9B0C72FC1A1D96F80099A038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0C72FA1A1D96F80099A038 /* Main.storyboard */; };
 		9B0C72FF1A1D96F80099A038 /* NNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0C72FE1A1D96F80099A038 /* NNViewController.m */; };
 		9B0C73021A1D96F80099A038 /* NNMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0C73011A1D96F80099A038 /* NNMyScene.m */; };
-		9B0C73041A1D96F80099A038 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0C73031A1D96F80099A038 /* Spaceship.png */; };
 		9B0C73061A1D96F80099A038 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0C73051A1D96F80099A038 /* Images.xcassets */; };
 		9B0C730D1A1D96F80099A038 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0C730C1A1D96F80099A038 /* XCTest.framework */; };
 		9B0C730E1A1D96F80099A038 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0C72E61A1D96F80099A038 /* Foundation.framework */; };
 		9B0C730F1A1D96F80099A038 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0C72EA1A1D96F80099A038 /* UIKit.framework */; };
 		9B0C73171A1D96F80099A038 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B0C73151A1D96F80099A038 /* InfoPlist.strings */; };
 		9B0C73191A1D96F80099A038 /* Car_RaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0C73181A1D96F80099A038 /* Car_RaceTests.m */; };
+		9B0C73251A1D98750099A038 /* NNBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0C73241A1D98750099A038 /* NNBackground.m */; };
+		9B0C73281A1D9CF00099A038 /* NNMoving_Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0C73271A1D9CF00099A038 /* NNMoving_Car.m */; };
+		9B5E00C31A1EE79500E5B307 /* NNGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E00C21A1EE79500E5B307 /* NNGame.m */; };
+		9B5E00C61A1EE8C900E5B307 /* NNStartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E00C51A1EE8C900E5B307 /* NNStartLabel.m */; };
+		9B5E00CC1A1EE9F200E5B307 /* NNSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E00CB1A1EE9F200E5B307 /* NNSetting.m */; };
+		9B6975901A26E00F00E076B2 /* carS.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B69758E1A26E00F00E076B2 /* carS.png */; };
+		9B6975911A26E00F00E076B2 /* carS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B69758F1A26E00F00E076B2 /* carS@2x.png */; };
+		9B6975941A26E9F600E076B2 /* NNGameChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6975931A26E9F600E076B2 /* NNGameChange.m */; };
+		9B6975971A26F9FF00E076B2 /* NNSettingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6975961A26F9FF00E076B2 /* NNSettingLabel.m */; };
+		9E534F111A2535E000A77A9F /* NNMoving_EnemyCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E534F101A2535E000A77A9F /* NNMoving_EnemyCar.m */; };
+		9E534F141A253BAC00A77A9F /* NNGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E534F131A253BAC00A77A9F /* NNGameOverScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +63,33 @@
 		9B0C72FE1A1D96F80099A038 /* NNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNViewController.m; sourceTree = "<group>"; };
 		9B0C73001A1D96F80099A038 /* NNMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNMyScene.h; sourceTree = "<group>"; };
 		9B0C73011A1D96F80099A038 /* NNMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNMyScene.m; sourceTree = "<group>"; };
-		9B0C73031A1D96F80099A038 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		9B0C73051A1D96F80099A038 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B0C730B1A1D96F80099A038 /* Car_RaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Car_RaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B0C730C1A1D96F80099A038 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9B0C73141A1D96F80099A038 /* Car_RaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Car_RaceTests-Info.plist"; sourceTree = "<group>"; };
 		9B0C73161A1D96F80099A038 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B0C73181A1D96F80099A038 /* Car_RaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car_RaceTests.m; sourceTree = "<group>"; };
+		9B0C73221A1D97E70099A038 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		9B0C73231A1D98750099A038 /* NNBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNBackground.h; sourceTree = "<group>"; };
+		9B0C73241A1D98750099A038 /* NNBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNBackground.m; sourceTree = "<group>"; };
+		9B0C73261A1D9CF00099A038 /* NNMoving_Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNMoving_Car.h; sourceTree = "<group>"; };
+		9B0C73271A1D9CF00099A038 /* NNMoving_Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNMoving_Car.m; sourceTree = "<group>"; };
+		9B5E00C11A1EE79500E5B307 /* NNGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNGame.h; sourceTree = "<group>"; };
+		9B5E00C21A1EE79500E5B307 /* NNGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNGame.m; sourceTree = "<group>"; };
+		9B5E00C41A1EE8C900E5B307 /* NNStartLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNStartLabel.h; sourceTree = "<group>"; };
+		9B5E00C51A1EE8C900E5B307 /* NNStartLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNStartLabel.m; sourceTree = "<group>"; };
+		9B5E00CA1A1EE9F200E5B307 /* NNSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNSetting.h; sourceTree = "<group>"; };
+		9B5E00CB1A1EE9F200E5B307 /* NNSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNSetting.m; sourceTree = "<group>"; };
+		9B69758E1A26E00F00E076B2 /* carS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carS.png; sourceTree = "<group>"; };
+		9B69758F1A26E00F00E076B2 /* carS@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "carS@2x.png"; sourceTree = "<group>"; };
+		9B6975921A26E9F600E076B2 /* NNGameChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNGameChange.h; sourceTree = "<group>"; };
+		9B6975931A26E9F600E076B2 /* NNGameChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNGameChange.m; sourceTree = "<group>"; };
+		9B6975951A26F9FF00E076B2 /* NNSettingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNSettingLabel.h; path = ../NNSettingLabel.h; sourceTree = "<group>"; };
+		9B6975961A26F9FF00E076B2 /* NNSettingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNSettingLabel.m; path = ../NNSettingLabel.m; sourceTree = "<group>"; };
+		9E534F0F1A2535E000A77A9F /* NNMoving_EnemyCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNMoving_EnemyCar.h; sourceTree = "<group>"; };
+		9E534F101A2535E000A77A9F /* NNMoving_EnemyCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNMoving_EnemyCar.m; sourceTree = "<group>"; };
+		9E534F121A253BAC00A77A9F /* NNGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNGameOverScene.h; sourceTree = "<group>"; };
+		9E534F131A253BAC00A77A9F /* NNGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNGameOverScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +120,8 @@
 		9B0C72DA1A1D96F80099A038 = {
 			isa = PBXGroup;
 			children = (
+				9B69758E1A26E00F00E076B2 /* carS.png */,
+				9B69758F1A26E00F00E076B2 /* carS@2x.png */,
 				9B0C72EE1A1D96F80099A038 /* Car_Race */,
 				9B0C73121A1D96F80099A038 /* Car_RaceTests */,
 				9B0C72E51A1D96F80099A038 /* Frameworks */,
@@ -128,7 +160,25 @@
 				9B0C72FE1A1D96F80099A038 /* NNViewController.m */,
 				9B0C73001A1D96F80099A038 /* NNMyScene.h */,
 				9B0C73011A1D96F80099A038 /* NNMyScene.m */,
-				9B0C73031A1D96F80099A038 /* Spaceship.png */,
+				9B5E00C11A1EE79500E5B307 /* NNGame.h */,
+				9B5E00C21A1EE79500E5B307 /* NNGame.m */,
+				9B0C73231A1D98750099A038 /* NNBackground.h */,
+				9B0C73241A1D98750099A038 /* NNBackground.m */,
+				9B0C73261A1D9CF00099A038 /* NNMoving_Car.h */,
+				9B0C73271A1D9CF00099A038 /* NNMoving_Car.m */,
+				9E534F121A253BAC00A77A9F /* NNGameOverScene.h */,
+				9E534F131A253BAC00A77A9F /* NNGameOverScene.m */,
+				9E534F0F1A2535E000A77A9F /* NNMoving_EnemyCar.h */,
+				9E534F101A2535E000A77A9F /* NNMoving_EnemyCar.m */,
+				9B5E00C41A1EE8C900E5B307 /* NNStartLabel.h */,
+				9B5E00C51A1EE8C900E5B307 /* NNStartLabel.m */,
+				9B6975951A26F9FF00E076B2 /* NNSettingLabel.h */,
+				9B6975961A26F9FF00E076B2 /* NNSettingLabel.m */,
+				9B5E00CA1A1EE9F200E5B307 /* NNSetting.h */,
+				9B5E00CB1A1EE9F200E5B307 /* NNSetting.m */,
+				9B6975921A26E9F600E076B2 /* NNGameChange.h */,
+				9B6975931A26E9F600E076B2 /* NNGameChange.m */,
+				9B0C73221A1D97E70099A038 /* Common.h */,
 				9B0C73051A1D96F80099A038 /* Images.xcassets */,
 				9B0C72EF1A1D96F80099A038 /* Supporting Files */,
 			);
@@ -242,8 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B0C72F31A1D96F80099A038 /* InfoPlist.strings in Resources */,
+				9B6975911A26E00F00E076B2 /* carS@2x.png in Resources */,
+				9B6975901A26E00F00E076B2 /* carS.png in Resources */,
 				9B0C73061A1D96F80099A038 /* Images.xcassets in Resources */,
-				9B0C73041A1D96F80099A038 /* Spaceship.png in Resources */,
 				9B0C72FC1A1D96F80099A038 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,9 +314,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0C73251A1D98750099A038 /* NNBackground.m in Sources */,
+				9B5E00CC1A1EE9F200E5B307 /* NNSetting.m in Sources */,
 				9B0C72FF1A1D96F80099A038 /* NNViewController.m in Sources */,
 				9B0C72F91A1D96F80099A038 /* NNAppDelegate.m in Sources */,
+				9B5E00C61A1EE8C900E5B307 /* NNStartLabel.m in Sources */,
+				9B6975941A26E9F600E076B2 /* NNGameChange.m in Sources */,
+				9E534F111A2535E000A77A9F /* NNMoving_EnemyCar.m in Sources */,
+				9B5E00C31A1EE79500E5B307 /* NNGame.m in Sources */,
+				9B6975971A26F9FF00E076B2 /* NNSettingLabel.m in Sources */,
 				9B0C73021A1D96F80099A038 /* NNMyScene.m in Sources */,
+				9E534F141A253BAC00A77A9F /* NNGameOverScene.m in Sources */,
+				9B0C73281A1D9CF00099A038 /* NNMoving_Car.m in Sources */,
 				9B0C72F51A1D96F80099A038 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +533,7 @@
 				9B0C731E1A1D96F80099A038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B0C731F1A1D96F80099A038 /* Build configuration list for PBXNativeTarget "Car_RaceTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +542,7 @@
 				9B0C73211A1D96F80099A038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
